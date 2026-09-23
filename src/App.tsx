@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header, { type View } from "./components/Header";
+import Header, { type View } from "./components/Header/Header";
 import "./App.css";
 
 function App() {
