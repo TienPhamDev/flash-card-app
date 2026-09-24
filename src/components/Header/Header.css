@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.header__toggle {
+  display: inline-flex;
+  padding: 0.25rem;
+  border: 2px solid var(--color-dark);
+  border-radius: 999px;
+  background-color: var(--color-white);
+}
+
+.header__toggle-btn {
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.header__toggle-btn[aria-pressed="true"] {
+  background-color: var(--color-yellow);
+}
+
+.header__toggle-btn:focus-visible {
+  outline: 2px solid var(--color-dark);
+  outline-offset: 2px;
+}
